@@ -1,0 +1,47 @@
+/////////////////////////
+//      Variables      //
+/////////////////////////
+
+// Fonts
+$font1: 'Yeseva One', cursive;
+$font2: 'Josefin Sans', sans-serif;
+
+$color--aqua: #08d9d6;
+$color--black: #252a34;
+$color--red: #ff2e63;
+$color--gray: #eaeaea;
+
+/////////////////////////
+//       Functions     //
+/////////////////////////
+
+@function pixelToRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+/////////////////////////
+//        Mixins       //
+/////////////////////////
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: pixelToRem($size);
+}
+
+//Paragraphs
+@mixin paragraph--small {
+  @include font-size(10px);
+  line-height: 24px;
+  font-weight: 400;
+}
+@mixin paragraph--regular {
+  @include font-size(16px);
+  line-height: 30px;
+  font-weight: 400;
+}
+@mixin paragraph--big {
+  @include font-size(18px);
+  line-height: 35px;
+  font-weight: 400;
+}

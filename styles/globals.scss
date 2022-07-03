@@ -1,0 +1,83 @@
+@import './normalize.scss';
+@import './Vars.scss';
+
+/////////////////////////
+//       Globals       //
+/////////////////////////
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* eliminate horizontal scroll */
+  max-width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: $font2;
+  scroll-behavior: smooth;
+  //color: $color--black;
+}
+
+body {
+  /* eliminate horizontal scroll */
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+//Titular mayor (h1), primary2-dark
+//h2, if an h1 already, primary2, if not, primary2-dark
+
+h1 {
+  font-family: $font1;
+  font-weight: 800;
+  @include font-size(42px);
+}
+
+h2 {
+  font-family: $font1;
+  line-height: 48px;
+  letter-spacing: 0;
+  font-weight: 800;
+}
+
+h3 {
+  font-family: $font1;
+  line-height: 35px;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: $font1;
+  line-height: 30px;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 40px 8px;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  color: $color--black;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn--blue {
+  background-color: $color--aqua;
+  &:hover {
+    background-color: $color--red;
+    color: $color--gray;
+  }
+}
