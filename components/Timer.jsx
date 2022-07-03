@@ -45,10 +45,10 @@ const Timer = (props) => {
         <section className={styles.timer__container}>
           <div>
             <span className={styles.timer__icon}>⏱️</span>
-            <h1>El evento...</h1>
+            <h1>Ya casi casi...</h1>
             <p>
-              No es lo mismo decir `Se avecina una tormenta` que `la tormenta se
-              avecina` (10/10)
+              No es lo mismo decir `Se avecina una tormenta` que `La vecina se
+              atormenta` (10/10)
             </p>
             <p>O será otra cosa la que se avecina? 🤔 </p>
           </div>
