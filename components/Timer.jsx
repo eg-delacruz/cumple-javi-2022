@@ -57,38 +57,30 @@ const Timer = (props) => {
             <section>
               <p>{timerDays}</p>
               <p>
-                <small>Days</small>
+                <small>Días</small>
               </p>
             </section>
             <span>:</span>
             <section>
               <p>{timerHours}</p>
               <p>
-                <small>Hours</small>
+                <small>Horas</small>
               </p>
             </section>
             <span>:</span>
             <section>
               <p>{timerMinutes}</p>
               <p>
-                <small>Minutes</small>
+                <small>Minutos</small>
               </p>
             </section>
             <span>:</span>
             <section>
               <p>{timerSeconds}</p>
               <p>
-                <small>Seconds</small>
+                <small>Segundos</small>
               </p>
             </section>
-            {/* <button
-            className='btn btn--blue'
-            onClick={() => {
-                props.setPage(1);
-            }}
-            >
-            Cambiar página
-        </button> */}
           </div>
         </section>
       </section>
