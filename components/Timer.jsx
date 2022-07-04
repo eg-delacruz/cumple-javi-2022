@@ -1,5 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 import styles from '../styles/Timer.module.scss';
+import Image from 'next/image';
+
+//Assets
+import Javi_Ramalama from '../assets/javi_ramalama.gif';
 
 const Timer = (props) => {
   const [timerDays, setTimerDays] = useState('00');
@@ -44,7 +48,9 @@ const Timer = (props) => {
       <section className={styles.timer}>
         <section className={styles.timer__container}>
           <div>
-            <span className={styles.timer__icon}>⏱️</span>
+            <div className={styles.javi_Ramalama_container}>
+              <Image src={Javi_Ramalama} alt='Javi Ramalama' />
+            </div>
             <h1>Ya casi casi...</h1>
             <p>
               No es lo mismo decir `Se avecina una tormenta` que `La vecina se
