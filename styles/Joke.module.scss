@@ -1,0 +1,28 @@
+.Joke {
+  h1 {
+    margin-top: 0;
+  }
+  .devil_deactivated {
+    display: none;
+  }
+  .devil_container {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.5s ease-in-out;
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    span {
+      font-size: 150px;
+      margin-bottom: 10px;
+    }
+  }
+}

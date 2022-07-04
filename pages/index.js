@@ -4,10 +4,12 @@ import Head from 'next/head';
 
 //Componentes
 import Login from '../components/Login';
+import Joke from '../components/Joke';
 import Timer from '../components/Timer';
 
 export default function Home() {
-  const [page, setPage] = useState(0);
+  //TODO: set state to 0
+  const [page, setPage] = useState(1);
   return (
     <div className>
       <Head>
@@ -18,9 +20,10 @@ export default function Home() {
 
       <main>
         <div>
-          {page === 0 && <Timer setPage={setPage} />}
-          {/* Página de era paja jejeje */}
-          {page === 1 && <Login setPage={setPage} />}
+          {/* TODO: Uncomment first page before uploading */}
+          {/* {page === 0 && <Timer setPage={setPage} />} */}
+          {page === 1 && <Joke setPage={setPage} />}
+          {page === 2 && <Login setPage={setPage} />}
         </div>
       </main>
     </div>
