@@ -13,7 +13,7 @@ import Test5 from '../components/Test5';
 
 export default function Home() {
   //TODO: set state to 0
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(0);
   return (
     <>
       <Head>
