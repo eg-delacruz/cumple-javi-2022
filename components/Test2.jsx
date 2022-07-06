@@ -12,8 +12,8 @@ import useRandomMessage from '../hooks/useRandomMessage';
 import { useInputValue } from '../hooks/useInputValue';
 
 //Assets
-import Playa_roatan from '../assets/roatan.jpg';
-import Cuchito from '../assets/Cuchito.png';
+import Playa_roatan from '../assets/roatan.JPG';
+import Cuchito from '../assets/cuchito.png';
 
 const Test2 = (props) => {
   const [answered, setAnswered] = useState(false);

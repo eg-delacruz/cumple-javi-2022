@@ -13,7 +13,7 @@ import Header from './Header';
 
 //Assets
 import codigo_2 from '../assets/codigo_2.png';
-import javi_intercambio from '../assets/javi_intercambio.jpg';
+import javi_intercambio from '../assets/javi_intercambio.JPG';
 
 const Test3 = (props) => {
   const [answered, setAnswered] = useState(false);
