@@ -10,6 +10,10 @@ const useRandomMessage = () => {
     6: 'En serio?... Esperé más de vos...',
     7: 'Pudín?',
     8: 'Etooo... no?',
+    9: 'Rendite mejor...',
+    10: 'Nel...',
+    11: 'Nope...',
+    12: 'Maletón...',
   };
 
   const [random, setRandom] = useState('');
@@ -21,7 +25,7 @@ const useRandomMessage = () => {
   }
 
   function setRandomMessage() {
-    setRandom(mensajes[setRandomNumber(1, 6)]);
+    setRandom(mensajes[setRandomNumber(1, 11)]);
   }
 
   return { random, setRandomMessage };

@@ -23,6 +23,7 @@ body {
   /* eliminate horizontal scroll */
   max-width: 100%;
   overflow-x: hidden;
+  color: $color--black;
 }
 
 //Titular mayor (h1), primary2-dark
@@ -55,6 +56,34 @@ h4 {
   font-weight: 700;
 }
 
+p {
+  line-height: 20px;
+  max-width: 80ch;
+}
+
+input {
+  width: 100%;
+}
+
+//Put this class to a div container. Used when there is a
+//long text with several paragraphs
+.text_container {
+  margin: 0 auto;
+  max-width: 65ch;
+  text-align: justify;
+}
+
+.answer_container {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.error_displayer {
+  margin: 0 auto;
+  color: $color--red;
+  margin-top: 10px;
+}
+
 .container {
   width: 100%;
   max-width: 1000px;
@@ -64,6 +93,7 @@ h4 {
 }
 
 .btn {
+  display: block;
   border: none;
   border-radius: 5px;
   color: $color--black;
@@ -72,12 +102,23 @@ h4 {
   padding: 12px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .btn--blue {
   background-color: $color--aqua;
   &:hover {
     background-color: $color--red;
+    color: $color--gray;
+  }
+}
+
+.btn--red {
+  background-color: $color--red;
+  color: white;
+  &:hover {
+    background-color: $color--aqua;
     color: $color--gray;
   }
 }

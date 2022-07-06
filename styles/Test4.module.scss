@@ -1,0 +1,26 @@
+@import './Vars.scss';
+
+.test4 {
+  &__container {
+    border-radius: 3px;
+    padding: 20px 8px;
+    border: 1px solid $color--gray;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.03);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  &__audio {
+    max-width: 320px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .test4 {
+    padding: 0 8px;
+  }
+}

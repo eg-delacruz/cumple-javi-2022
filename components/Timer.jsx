@@ -53,8 +53,8 @@ const Timer = (props) => {
             </div>
             <h1>Ya casi casi...</h1>
             <p>
-              No es lo mismo decir `Se avecina una tormenta` que `La vecina se
-              atormenta` (10/10)
+              No es lo mismo decir &quot;Se avecina una tormenta&quot; que
+              &quot;La vecina se atormenta&quot; (10/10)
             </p>
             <p>O será otra cosa la que se avecina? 🤔 </p>
           </div>

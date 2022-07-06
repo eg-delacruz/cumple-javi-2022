@@ -11,7 +11,7 @@ const Joke = (props) => {
 
     setTimeout(() => {
       props.setPage(2);
-    }, 7000);
+    }, 8000);
   }, []);
   return (
     <div className={`${styles.Joke} container`}>
