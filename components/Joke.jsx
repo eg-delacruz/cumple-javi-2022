@@ -18,7 +18,7 @@ const Joke = (props) => {
       <h1>Oh vaya...</h1>
       <h2>Parece que en realidad no iba a pasar nada 😆</h2>
       <p>Tanta espera por nada</p>
-      <p>O sí pasará algo? 🤔</p>
+      <p>O sí pasará algo? 🤔🤔</p>
       <div
         className={`${
           devil ? styles.devil_container : styles.devil_deactivated
